@@ -13,7 +13,7 @@
 	<body>
 			<div id="bloc_page">
 				<!--Bandeau d'entête de page-->
-			<header>
+			<header id="header_ajout_full_size">
 				
 				<nav class='header_left'>
 					<ul>
@@ -31,6 +31,7 @@
 				</nav>
 				
 			</header>
+			
 				
 				<!--Fin du bandeau d'entête de page-->
 				

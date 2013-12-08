@@ -1,4 +1,5 @@
 <!--Bloc de description de la page d'ajout-->
+		<h1 class="mobile">Ajouter une comptine</h1>
 		<article class="ajout_bannière">
 
 			<p id="texte_ajout">Créer votre propre comptine et mettez la en ligne sur notre site !</p>
@@ -50,7 +51,7 @@
 						<p>
 							<div id="ajout_fichier">
 								<input class="fichier" type="file" name="video" id="fichier"/>
-								<h3>choissez un fichier</h3>
+								<h3>choisissez un fichier</h3>
 							</div>
 						</p>
 				

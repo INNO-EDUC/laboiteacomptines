@@ -1,9 +1,9 @@
-
+<header id="header_mobile"><img src="images/logo.png" alt="Logo" class='logo'/></header>
 <!--Formulaire de recherche-->
 <div id="banniere_image">
     <div id="banniere_recherche">
         <form method="POST" action="index.php?action=confRecherche" id="target">
-            <input type="text" value="" name="cat" id="keyword" placeholder="entrez le nom de la comptine que vous cherchez."/>
+            <input type="text" value="" name="cat" id="keyword" placeholder="nom de la comptine"/>
             <input type="submit" value="Rechercher" id="submit"/>
         </form>
     </div>
@@ -13,7 +13,6 @@
 	Bienvenue sur la boîte à comptines !
 	<br/> Vous trouverez ici de petites chansons pour vous accompagner dans l'éducation de vos enfants.
 </p>
-
 <aside>
 	<h2>Les catégories :</h2>
 	
@@ -64,3 +63,4 @@ if (isset($added))
 }
 ?>
 </article>
+<a href="#" id="categories_mobile">Voir toutes les catégories</a>
