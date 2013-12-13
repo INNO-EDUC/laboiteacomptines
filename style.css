@@ -93,7 +93,7 @@ article
 }
 
 /*Entête*/
-header
+#header_ajout_full_size
 {
 	position: relative;
 	text-align: center;
@@ -106,6 +106,12 @@ header img, nav
 	display: inline-block;
 	vertical-align: middle;
 }
+#header_mobile
+	{
+		visibility: hidden;
+		height: 0px;
+		width: 940px;
+	}
 header img
 {
 	position: relative;
@@ -125,12 +131,12 @@ nav li
 #nav_ajouter
 {
 	width: 200px;
-	margin-right: 80px;
+	margin-right:110px;
 }
 #nav_contact
 {
 	width: 130px;
-	margin-left: 80px;
+	margin-left:108px;
 }
 #question
 {
@@ -328,13 +334,13 @@ article textarea
 
 
 /**********************************************Pied de page******************************************/
-footer
+#footer_web
 {
 	background-color: rgba(204,204,204,0.8);
 	padding: 30px;
 	margin-top: 80px;
 }
-footer p
+#footer_web p
 {
 	color: rgba(153,153,153,0.8);
 	font-size: 1em;
@@ -342,7 +348,7 @@ footer p
 	margin: auto;
 	text-align: center;
 }
-footer a
+#footer_web a
 {
 	color: rgba(153,153,153,0.8);
 }
@@ -587,4 +593,199 @@ article h1
 {
 	text-align:center;
 }
+
+/**************************VERSION RESPONSIVE************************/
+@media all and (max-width: 480px)
+{
+	body 
+	{
+		width:100%;
+		background-color: #FFF;
+	} 
+}
+@media all and (max-width: 480px)
+{
+	#bloc_page
+	{
+		width: 90%;
+		margin:0 auto 0 auto; 
+		background-color: #FFF;
+		font-size: 16px;
+	}
+}
+@media all and (max-width: 480px)
+{
+	#header_mobile
+	{
+		visibility: visible;
+		display: inline-block;
+		z-index: 2;
+		position: relative;
+		text-align: center;
+		margin: 0 auto;
+		height: 120px;
+		width: 100%;
+		min-width: 120px;
+	}
+	
+}
+@media all and (max-width:480px)
+{
+	#header_ajout_full_size
+	{
+		visibility:hidden;
+		height: 0px;
+		width: 480px;
+	}
+}
+.mobile
+{
+	visibility:hidden;
+	height: 0px;
+	width: 940px;
+}
+@media all and (max-width:480px)
+{
+	.mobile
+	{
+		background-color:#ED1E79;
+		height:30px;
+		visibility: visible;
+		width: 100%;
+		text-align: center;
+		font-family: 'Cookie', cursive;
+		padding: 10px;
+		font-size: 30px;
+		color: white;
+	}
+}
+@media all and (max-width: 480px)
+{
+	#banniere_image
+	{
+		width: 100%;
+		height: 180px;
+	}
+}
+@media all and (max-width: 480px)
+{
+	#keyword
+	{
+		Width: 220px;
+		border: 1px solid #e6e6e6;
+		font-size: 16px;
+		font-family: 'Varela Round', Serif;
+	}
+	#submit
+	{
+		width: 40px;
+	}
+	#banniere_recherche
+	{
+		position: initial;
+		padding-top: 120px;
+	}
+}
+h4
+{
+	visibility: hidden;
+	height: 0px;
+	color: white;
+}
+#footer_mobile
+{
+	visibility: hidden;
+	height: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+
+@media all and (max-width: 480px)
+{
+	#footer_web
+	{
+		visibility: hidden;
+		width: 0px;
+		height: 0px;
+		padding: 0px;
+		margin: 0px;
+	}
+	
+	h4
+	{
+		visibility: visible;
+		width: 100%;
+		height: 30px;
+		background-color: #999;
+		text-align: center;
+	}
+	#footer_mobile p
+	{
+		visibility: visible;
+		text-decoration: none;
+		color: #929292;
+		padding-top: 40px;	
+		text-align: center;
+	}
+	#footer_mobile
+	{
+		background-color: #e6e6e6;
+		width:100%;
+		height: 120px;	
+		visibility: visible;
+	}
+	#footer_web p
+	{
+		height: 0px;
+	}
+}
+@media all and (max-width: 480px)
+{
+	#accueil
+	{
+		visibility:hidden;
+		height:0px;
+		margin:0px;
+		padding:0px;
+	}
+}
+@media all and (max-width: 480px)
+{
+	aside
+	{
+		visibility:hidden;
+		height:0px;
+		margin:0px;
+		padding:0px;
+	}
+}
+#categories_mobile
+{
+	visibility:hidden;
+	height:0px;
+	margin:0px;
+	padding:0px;
+}
+@media all and (max-width: 480px)
+{
+	#video_suggestion
+	{
+		visibility:hidden;
+		height:0px;
+		margin:0px;
+		padding:0px;
+	}
+	#categories_mobile
+	{
+		visibility: visible;
+		display: block;
+		width: 100%;
+		height: 40px;
+		background-color: #705e98;
+		color: white;
+		text-align: center;
+		margin-top: 0px;
+	}
+}
+
 

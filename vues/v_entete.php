@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
 
@@ -37,3 +38,4 @@
     <!--Fin du bandeau d'entête de page-->
 
     <section>
+

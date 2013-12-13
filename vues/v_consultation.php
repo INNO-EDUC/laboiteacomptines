@@ -1,7 +1,11 @@
 <?php
 header('Content-type: text/html; charset=UTF-8');
 ?>
-<iframe frameborder="0" id="consultation" width="600" height="430" src="http://www.dailymotion.com/embed/video/<?php echo $video['id_daily'];?>?logo=0"></iframe><br />
+
+<h1 class="mobile">Une comptine...</h1>
+
+<iframe frameborder="0" id="consultation" width="600" height="430" src="http://www.dailymotion.com/embed/video/<?php echo $video['id_daily'];?>?logo=0&startscreen=html&html"></iframe><br />
+
 <article>
 	
     <p id="auteur">
@@ -36,4 +40,5 @@ header('Content-type: text/html; charset=UTF-8');
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 </article>
+<h4>Retour</h4>
 		
