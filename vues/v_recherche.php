@@ -54,15 +54,6 @@
 
     <!-- SUGGESTIONS VIDEOS -->
 
-    <div class="bloc">
-        <img src="img/videos/x120-35Y.jpg" alt="">
-        <div class="informations">
-            <h3>Ainsi font font font les petites marionnettes<h4> de Julie</h4></h3>
-            <legend>20 octobre 2013</legend>
-            <div class="views"><h4>52 vues</h4></div>
-        </div>
-    </div>
-
     <?php
 
     if (isset($added))
