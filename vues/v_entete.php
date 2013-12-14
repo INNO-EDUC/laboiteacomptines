@@ -40,7 +40,8 @@
 
             <div class="clearfix"></div>
 
-            <div id="logo"></div>
+            <a href="index.php"><div id="logo"></div></a>
+            
         </div>
     </header>
 
