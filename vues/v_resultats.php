@@ -1,27 +1,32 @@
 ﻿<?php
 header('Content-type: text/html; charset=UTF-8');
 ?>
-<h1>Vos comptines</h1>
-<script>
-function infos(val){
-	var auteur;
-  		$.ajax({
-    		url : "http://blugture.net/comptines/lib/identite.php",
-		    type: "POST",
-		    data : {infos : val},
-		    success: function(data)
-		    	{
-		    	var auteur_id = "#auteur_"+val;
-		    	$(auteur_id).html(data.vide_created_by);
-		    	console.log(auteur_id + " = " +data.vide_created_by );
-		    	}
 
-		    });
-  			//alert(auteur);
-//return auteur;
-//alert(auteur);
-}
-</script>
+<!-- COVER (image à changer) -->
+
+<div id="cover"></div>
+
+<!-- RECHERCHE -->
+
+<div class='wrap'>
+
+    <div id='search'>
+        <form method="POST" action="http://laboiteacomptines.fr/index.php?action=confRecherche" id="target">
+            <input type="text" value="" name="cat" id="keyword" placeholder="entrez le nom de la comptine">
+            <input type="submit" value="rechercher" id="submit">
+        </form>
+    </div>
+
+</div>
+
+<!-- Details de la catégorie -->
+
+<div class='wrap'>
+
+
+
+</div>
+
 
 <p><?= count($list) ?> vidéos ont été trouvées pour la recherche <?= $_REQUEST["cat"] ?> </p>
 <div id="list">
