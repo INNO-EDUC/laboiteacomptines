@@ -191,6 +191,18 @@ function getcategories()
 }
 
 
+function getcategory($cat)
+{
+    foreach (getcategories() as $category)
+    {
+        if ($category['cate_title'] == $cat)
+            return $category;
+    }
+
+    return null;
+}
+
+
 function addMovie()
 {
     $config = config();

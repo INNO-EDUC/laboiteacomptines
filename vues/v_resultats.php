@@ -23,35 +23,31 @@ header('Content-type: text/html; charset=UTF-8');
 
 <div class='wrap'>
 
-
+    <img src="img/category/<?= $category['cate_title'] ?>.jpg" alt="<?= $category['cate_title'] ?>"/>
+    <p><?= $category['cate_description'] ?></p>
 
 </div>
 
+<div class="wrapBig">
 
-<p><?= count($list) ?> vidéos ont été trouvées pour la recherche <?= $_REQUEST["cat"] ?> </p>
-<div id="list">
+    <?php
 
-  <?php
+    foreach ($propositions as $video)
+    {
+        echo '<div class="bloc">';
+        echo '  <a href="index.php?action=consulter&idDly='.$video['id_daily'].'">';
+        echo '      <img src="'.$video['thumbnail_120_url'].'" alt="'.$video['vide_name'].'"/>';
+        echo '      <div class="informations">';
+        echo '          <h3>'.$video['vide_name'].'</h3><h4> de '.$video['vide_created_by'].'</h4>';
+        echo '          <legend>'.$video['vide_created_at'].'</legend>';
+        echo '          <div class="views"><h4>'.$video['vide_nbvue'].' vues</h4></div>';
+        echo '      </div>';
+        echo '  </a>';
+        echo '</div>';
+    }
 
-  foreach ($list as $video)
-  {
-      echo '<ul class="list_resultat">';
-      echo      '<li>';
-      echo          '<a href="index.php?action=consulter&idDly='.$video['id_daily'].'">';
-      echo              '<img src="'.$video['thumbnail_120_url'].'" id="video">';
-      echo          '</a>';
-      echo          '<div class="resultats">';
-      echo              '<a href="index.php?action=consulter&idDly='.$video['id_daily'].'">';
-      echo                  '<h2>'.$video['vide_name'].'</h2>';
-      echo              '</a>';
-      echo              '<p>Publié le : '.$video['vide_created_at'].' </p>';
-      echo              '<p id="auteur">'.$video['vide_created_by'].'</p>';
-      echo              '<p id="vues">Nombre de vues '.$video['vide_nbvue'].'</p>';
-      echo              '<p></p>';
-      echo          '</div>';
-      echo      '</li>';
-      echo  '</ul>';
-  }
-	?>
+    ?>
+
+    <div class="clearfix"></div>
 
 </div>
