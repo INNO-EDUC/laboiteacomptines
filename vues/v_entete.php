@@ -38,8 +38,6 @@
                 </ul>
             </nav>
 
-            <div class="clearfix"></div>
-
             <a href="index.php"><div id="logo"></div></a>
 
         </div>
