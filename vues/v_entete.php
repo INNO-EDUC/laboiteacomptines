@@ -32,8 +32,8 @@
         <div class='wrap'>
             <nav>
                 <ul>
-                    <a href="http://laboiteacomptines.fr/index.php?action=ajout"><li id="add">ajouter une comptine</li></a>
-                    <a href="http://laboiteacomptines.fr/index.php#"><li id="question">?</li></a>
+                    <a href="index.php?action=ajout"><li id="add">ajouter une comptine</li></a>
+                    <a href="index.php#"><li id="question">?</li></a>
                     <a href="mailto:contact@laboiteacomptines.fr"><li id="contact">contact</li></a>
                 </ul>
             </nav>
