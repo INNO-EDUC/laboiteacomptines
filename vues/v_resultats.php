@@ -46,7 +46,7 @@ header('Content-type: text/html; charset=UTF-8');
       echo              '</a>';
       echo              '<p>Publié le : '.$video['vide_created_at'].' </p>';
       echo              '<p id="auteur">'.$video['vide_created_by'].'</p>';
-      echo              '<p id="vues">Nombre de vues '.$video['vide_nbvue'].'</p>';
+      echo              '<p id="vues">Nombre de vues : '.$video['vide_nbvue'].'</p>';
       echo              '<p></p>';
       echo          '</div>';
       echo      '</li>';
