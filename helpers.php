@@ -6,7 +6,7 @@
  * Time: 02:43
  */
 
-require_once 'Dailymotion.php';
+require_once 'lib/Dailymotion.php';
 require_once 'config.php';
 
 function getpropositions($nb_propositions)

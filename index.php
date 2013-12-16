@@ -1,5 +1,5 @@
 <?php
-include('lib/helpers.php');
+include('helpers.php');
 
 if(!isset($_REQUEST['app']))
     $app = 'web'; //Si l'application appeleante n'est pas identifiée, on considère que l'appel vient du web
