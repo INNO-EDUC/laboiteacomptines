@@ -172,6 +172,8 @@ function getcategories()
         die ('Impossible de sélectionner la base de données : ' . mysql_error());
     }
 
+    mysql_query("SET NAMES 'utf8'");
+
     $sql = "SELECT * from categories";
     $reponse = mysql_query($sql);
 

@@ -4,7 +4,7 @@ header('Content-type: text/html; charset=UTF-8');
 
 <!-- COVER (image à changer) -->
 
-<div id="cover"></div>
+<div id="cover" style="height: 200px;"></div>
 
 <!-- RECHERCHE -->
 
@@ -21,11 +21,13 @@ header('Content-type: text/html; charset=UTF-8');
 
 <!-- Details de la catégorie -->
 
-<div class='wrap'>
+<div id="presentation">
+    <div class='wrap catHeader' >
 
-    <img src="img/category/<?= $category['cate_title'] ?>.jpg" alt="<?= $category['cate_title'] ?>"/>
-    <p><?= $category['cate_description'] ?></p>
+        <img src="img/category/<?= $category['cate_title'] ?>.jpg" alt="<?= $category['cate_title'] ?>"/>
+        <p><?= $category['cate_description'] ?></p>
 
+    </div>
 </div>
 
 <div class="wrapBig">
