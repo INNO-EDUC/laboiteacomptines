@@ -127,6 +127,28 @@ input		  		  { width: 			  auto;
 li					  {	text-align: 	  center; }
 
 
+.c50                  { width: 49.5%;
+                        display: inline-block;
+                        vertical-align: top;
+                        margin-bottom: 40px; }
+
+
+.frame_pink           { background-color: #F4E8D9; }
+
+
+.button               { line-height: normal;
+                        display: block;
+                        cursor: pointer; }
+
+
+.btn_type3            { background-color: #ED1E79;
+                        color: #ffffff;
+                        width: 60%;
+                        margin-left: auto;
+                        margin-right: auto; }
+.btn_type3:hover      { background-color: #CE006C; }
+
+
 
 
 
@@ -227,7 +249,6 @@ input#submit:hover	  { background-color: #574F84; }
 						padding: 		  40px 0;
 						margin-bottom: 	  20px;
 						position:		  relative;
-						text-align: 	  center;
 						background-color: #F4E8D9; }
 
 .catHeader            { height: 80px; }
@@ -325,6 +346,43 @@ footer 				  { height: 		  auto;
 
 
 
+/* ----------- PLAYER VIDEO ----------- */
+
+.player .bottomBloc    { background-color: #F4E8D9; }
+
+
+.player .title         { width: 50%;
+                        display: inline-flex;
+                        padding: 20px; }
+
+.player .like          { float: right;
+                        display: -webkit-inline-box;
+                        padding: 20px; }
+
+
+
+
+
+
+
+
+
+/* ----------- PAROLES ----------- */
+
+.paroles              { text-align: center;
+                        margin: 20px 30px;
+                        border-bottom: 1px solid #DDD; }
+
+
+
+
+
+
+
+/* ----------- COMMENTAIRES ----------- */
+
+#disqus_thread        { padding-top: 20px; }
+
 
 
 
@@ -344,6 +402,98 @@ footer 				  { height: 		  auto;
 
 
 
+
+
+
+
+/* ----------- FORMULAIRE ----------- */
+
+
+.field                { padding: 10px 40px;
+                        height: 40px; }
+
+
+label                 { vertical-align: -webkit-baseline-middle; }
+
+
+.input                { float: right;
+                        width: 60%;
+                        height: 40px;
+                        padding: 0 20px;
+                        line-height: 40px;
+                        border-radius: 20px;
+                        font-size: 16px;}
+
+
+select.input          { height: 40px;
+                        background-color: white;
+                        color: #BBB;
+                        border-radius: 20px;
+                        padding: 0 10px;
+                        width: 70%; }
+
+
+input.fichier         { display: -webkit-inline-box; }
+
+
+.fileUpload           { position: relative;
+                        overflow: hidden;
+                        background-color: #6F5F99;
+                        width: 45%;
+                        color: white;
+                        height: 20px;
+                        padding: 10px;
+                        border-radius: 20px;
+                        text-align: center;
+                        display: inline-block; }
+
+
+.fileUpload span      { color: white;
+                        vertical-align: text-bottom; }
+
+
+.fileUpload input.upload { position: absolute;
+                        top: 0;
+                        right: 0;
+                        margin: 0;
+                        padding: 0;
+                        font-size: 20px;
+                        cursor: pointer;
+                        opacity: 0;
+                        filter: alpha(opacity=0); }
+
+
+label#paroles         { vertical-align: top;
+                        padding-top: 10px; }
+
+
+
+
+
+#upload_cover 		  { width:			  100%;
+                        height:			  240px;
+                        position:		  relative;
+                        background: 	  url(img/illunoel.jpg) no-repeat center center;
+                        -webkit-background-size: cover;
+                        -moz-background-size: cover;
+                        -o-background-size: cover;
+                        background-size: cover; }
+
+
+.upload_text          { position: absolute;
+                        z-index: 2;
+                        top: 30px;
+                        left: 30px;
+                        width: 200px; }
+
+
+#ajout_form           { padding: 30px 0 40px 0; }
+
+
+#uploadFile           { color: #777;
+                        background-color: transparent;
+                        padding: 0;
+                        width: 100%; }
 
 
 
@@ -377,6 +527,11 @@ h4 	 			 	  { font-size: 		  14px;
 h5 	 			 	  { font-family: 	  'Cookie', cursive;
 						font-size: 		  25px;
 						line-height: 	  30px; }
+
+h6 	 			 	  { font-family: 	  'Cookie', cursive;
+                        font-size: 		  25px;
+                        line-height: 	  30px;
+                        color:            #ED1E79; }
 
 
 p 	 			 	  { font-size: 		  16px;
@@ -431,7 +586,7 @@ p 	 			 	  { font-size: 		  16px;
 /* rose */
 
 { color: #ED1E79; }
-{ background-color: #ED1E79; }
-{ background-color: #CE006C; }
+.pink_bg { background-color: #ED1E79; }
+.pink_bg:hover { background-color: #CE006C; }
 
 
