@@ -120,7 +120,8 @@ li 					  { list-style: none;
 
 .blocBig	 		  { height: 		  540px;
 						padding: 		  20px 0;
-						background-color: #9E005D;  }
+						background-color: #9E005D;
+                        width: 280px; }
 
 
 

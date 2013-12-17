@@ -127,7 +127,7 @@ header('Content-type: text/html; charset=UTF-8');
 <div class="wrap team_padding">
     <h6>Pour aller plus loin :</h6>
     <ul>
-        <li class="team_list"><a href="http://www.parent-nounou.fr/blog-details/42" style="text-decoration: underline;">Du geste à la parole</a> - Comprendre l'intérêt pédagogique des comptines</li>
+        <li class="team_list"><a href="http://www.parent-nounou.fr/blog-details/42" target="_blank" style="text-decoration: underline;">Du geste à la parole</a> - Comprendre l'intérêt pédagogique des comptines</li>
     </ul>
 </div>
 

@@ -36,7 +36,7 @@ header('Content-type: text/html; charset=UTF-8');
 
     foreach ($propositions as $video)
     {
-        echo '<div class="bloc">';
+        echo '<div class="bloc bloc33">';
         echo '  <a href="index.php?action=consulter&idDly='.$video['id_daily'].'">';
         echo '      <img src="'.$video['thumbnail_120_url'].'" alt="'.$video['vide_name'].'"/>';
         echo '      <div class="informations">';
