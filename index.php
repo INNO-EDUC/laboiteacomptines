@@ -50,6 +50,7 @@ switch($app)
                 break;
             case 'addMovie':
                 $added = addMovie();
+                $propositions = getpropositions(4);
                 include("vues/v_recherche.php");
                 break;
             case 'equipe':

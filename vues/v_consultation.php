@@ -12,13 +12,13 @@ header('Content-type: text/html; charset=UTF-8');
                 <h3><?php echo $video["vide_name"]; ?></h3>
                 <h4>&nbsp;de <?php echo $video["vide_created_by"]; ?></h4>
             </div>
-            <div class="like">
-                <h4><?php echo $video["vide_rate"]; ?></h4>
+            <!--<div class="like">
+                <h4><?php /*echo $video["vide_rate"]; */?></h4>
                 <a href="index.php?action=adore">
                     <img src="img/coeur.jpg" alt="coeur">
                     <h6>J'adore !</h6>
                 </a>
-            </div>
+            </div>-->
         </div>
     </div>
 </div>

@@ -23,7 +23,7 @@ header('Content-type: text/html; charset=UTF-8');
     </div>
 </div>
 
-<div class="wrapBig team_padding">
+<!--<div class="wrapBig team_padding">
     <h6>L'équipe</h6>
     <div class="bloc bloc25">
         <img src="" alt="Photo de Anna" style="height: 200px;">
@@ -120,7 +120,7 @@ header('Content-type: text/html; charset=UTF-8');
             <h4>Web designer</h4>
         </div>
     </div>
-</div>
+</div>-->
 
 <div class="clearfix"></div>
 

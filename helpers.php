@@ -268,6 +268,8 @@ function getcategory($cat)
 
 function addMovie()
 {
+    try
+    {
     $config = config();
     $movedfile = 'upload/'.time().'.avi';
     move_uploaded_file($_FILES['video']['tmp_name'], $movedfile);
@@ -312,8 +314,13 @@ function addMovie()
     $req = mysql_query($sql) or die('Erreur SQL !<br>'.$sql.'<br>'.mysql_error());
     mysql_close();
 
-
-    return 1;
+    return true;
+    }
+    catch (Exception $e)
+    {
+        mysql_close();
+        return false;
+    }
 
 }
 
