@@ -23,10 +23,15 @@ switch($app)
                 $propositions = getpropositions(4);
                 include("vues/v_recherche.php");
                 break;
-            case 'confRecherche':
+            case 'search':
+                $searchString = $_REQUEST['searchString'];
+                $propositions = getSearchList($searchString);
+                include("vues/v_resultats.php");
+                break;
+            case 'selectCategory':
                 $category = getcategory($_REQUEST['cat']);
                 $propositions = getlist($category['cate_title']);
-                include("vues/v_resultats.php");
+                include("vues/v_detailsCategorie.php");
                 break;
             case 'consulter':
                 $video = getvideo($_REQUEST['idDly']);
@@ -73,7 +78,7 @@ switch($app)
                 echo(json_encode(getpropositions(3)));
                 break;
             case 'confRecherche':
-                include("vues/v_resultats.php");
+                include("vues/v_detailsCategorie.php");
                 break;
             case 'consulter':
                 include("vues/v_consultation.php");

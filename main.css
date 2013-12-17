@@ -369,6 +369,8 @@ footer 				  { height: 		  auto;
                         display: -webkit-inline-box;
                         padding: 20px; }
 
+#paroles              { text-align: center; }
+
 
 
 
@@ -380,7 +382,7 @@ footer 				  { height: 		  auto;
 /* ----------- PAROLES ----------- */
 
 .paroles              { text-align: center;
-                        margin: 20px 30px;
+                        padding: 20px 0;
                         border-bottom: 1px solid #DDD; }
 
 

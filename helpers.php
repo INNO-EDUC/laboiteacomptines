@@ -139,6 +139,67 @@ function getlist($tag)
 }
 
 
+function getSearchList($tag)
+{
+
+    $config = config();
+
+    // Connexion base de données
+    $link = mysql_connect($config['db']['server'], $config['db']['username'], $config['db']['password'])
+    or die("Impossible de se connecter : " . mysql_error());
+    $db_selected = mysql_select_db($config['db']['name'], $link);
+    if (!$db_selected) {
+        die ('Impossible de sélectionner la base de données : ' . mysql_error());
+    }
+    mysql_query("SET NAMES 'utf8'");
+
+    $sql = "SELECT * from videos
+        WHERE vide_tag LIKE '%".$tag."%'
+        OR vide_name LIKE '%".$tag."%'
+        OR vide_paroles LIKE '%".$tag."%'
+        OR vide_created_by LIKE '%".$tag."%'
+        ORDER BY vide_nbvue DESC";
+    $reponse = mysql_query($sql);
+
+
+    //----- Dailymotion object instanciation -----//
+    $api = new Dailymotion();
+    $api->setGrantType(
+        Dailymotion::GRANT_TYPE_PASSWORD,
+        $config['dailymotion']['apiKey'],
+        $config['dailymotion']['apiSecret'],
+        $scope = array('manage_videos'),
+        array(
+            'username' => $config['dailymotion']['user'],
+            'password' => $config['dailymotion']['password']
+        )
+    );
+
+
+    //Transformation du resultat de la requete en tableau
+    // et récupérationdes données de Dailymotion
+    $result = array();
+    while ($video = mysql_fetch_array($reponse, MYSQL_ASSOC))
+    {
+        $thumbnail = $api->get('/videos', array(
+            'fields' => 'id,thumbnail_120_url',
+            'ids' => $video['id_daily'],
+        ));
+        $result[$video['vide_id']] = array(
+            'id_daily' => $video['id_daily'],
+            'vide_name' => $video['vide_name'],
+            'vide_nbvue' => $video['vide_nbvue'],
+            'vide_paroles' => $video['vide_paroles'],
+            'vide_created_by' => $video['vide_created_by'],
+            'vide_created_at' => substr($video['vide_created_at'],0,10),
+            'thumbnail_120_url' => $thumbnail['list']['0']['thumbnail_120_url'],
+        );
+    }
+
+    return $result;
+}
+
+
 function incrementerLeNombreDeVues($id)
 {
     $config = config();

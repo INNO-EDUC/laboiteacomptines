@@ -66,7 +66,7 @@
             <nav>
                 <ul>
                     <a href="index.php?action=ajout"><li id="add">ajouter une comptine</li></a>
-                    <a href="index.php#"><li id="question">?</li></a>
+                    <a href="index.php?action=equipe"><li id="question">?</li></a>
                     <a href="mailto:contact@laboiteacomptines.fr"><li id="contact">contact</li></a>
                 </ul>
             </nav>

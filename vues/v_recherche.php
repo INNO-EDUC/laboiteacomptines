@@ -9,8 +9,8 @@
 <div class='wrap'>
 
     <div id='search'>
-        <form method="POST" action="http://laboiteacomptines.fr/index.php?action=confRecherche" id="target">
-            <input type="text" value="" name="cat" id="keyword" placeholder="entrez le nom de la comptine">
+        <form method="POST" action="index.php?action=search" id="target">
+            <input type="text" value="" name="searchString" id="keyword" placeholder="entrez le nom de la comptine">
             <input type="submit" value="rechercher" id="submit">
         </form>
     </div>
@@ -37,14 +37,14 @@
         <h1>Les catégories :</h1>
 
         <ul id="categories">
-            <li><a href="index.php?action=confRecherche&cat=classique" title="Grands classiques"><img src="img/category/classique.jpg" alt=""></a></li>
-            <li><a href="index.php?action=confRecherche&cat=corps" title="Découvrir le corps"><img src="img/category/corps.jpg" alt=""></a></li>
-            <li><a href="index.php?action=confRecherche&cat=mains" title="La main et ses 5 doigts"><img src="img/category/mains.jpg" alt=""></a></li>
-            <li><a href="index.php?action=confRecherche&cat=gym" title="Un peu de gymnastique"><img src="img/category/gym.jpg" alt=""></a></li>
-            <li><a href="index.php?action=confRecherche&cat=saut" title="Sur les genoux je saute"><img src="img/category/saut.jpg" alt=""></a></li>
-            <li><a href="index.php?action=confRecherche&cat=maths" title="Les maths pour bébé"><img src="img/category/maths.jpg" alt=""></a></li>
-            <li><a href="index.php?action=confRecherche&cat=monde" title="Le monde environnant"><img src="img/category/monde.jpg" alt=""></a></li>
-            <li><a href="index.php?action=confRecherche&cat=animaux" title="Comment font les animaux"><img src="img/category/animaux.jpg" alt=""></a></li>
+            <li><a href="index.php?action=selectCategory&cat=classique" title="Grands classiques"><img src="img/category/classique.jpg" alt=""></a></li>
+            <li><a href="index.php?action=selectCategory&cat=corps" title="Découvrir le corps"><img src="img/category/corps.jpg" alt=""></a></li>
+            <li><a href="index.php?action=selectCategory&cat=mains" title="La main et ses 5 doigts"><img src="img/category/mains.jpg" alt=""></a></li>
+            <li><a href="index.php?action=selectCategory&cat=gym" title="Un peu de gymnastique"><img src="img/category/gym.jpg" alt=""></a></li>
+            <li><a href="index.php?action=selectCategory&cat=saut" title="Sur les genoux je saute"><img src="img/category/saut.jpg" alt=""></a></li>
+            <li><a href="index.php?action=selectCategory&cat=maths" title="Les maths pour bébé"><img src="img/category/maths.jpg" alt=""></a></li>
+            <li><a href="index.php?action=selectCategory&cat=monde" title="Le monde environnant"><img src="img/category/monde.jpg" alt=""></a></li>
+            <li><a href="index.php?action=selectCategory&cat=animaux" title="Comment font les animaux"><img src="img/category/animaux.jpg" alt=""></a></li>
             <div class='clearfix'></div>
         </ul>
 

@@ -25,7 +25,7 @@ switch($app)
                 break;
             case 'confRecherche':
                 $list = getlist($_REQUEST['cat']);
-                include("vues/v_resultats.php");
+                include("vues/v_detailsCategorie.php");
                 break;
             case 'consulter':
                 $video = getvideo($_REQUEST['idDly']);
@@ -69,7 +69,7 @@ switch($app)
                 echo(json_encode(getpropositions(3)));
                 break;
             case 'confRecherche':
-                include("vues/v_resultats.php");
+                include("vues/v_detailsCategorie.php");
                 break;
             case 'consulter':
                 include("vues/v_consultation.php");
