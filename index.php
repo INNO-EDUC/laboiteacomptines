@@ -47,6 +47,9 @@ switch($app)
                 $added = addMovie();
                 include("vues/v_recherche.php");
                 break;
+            case 'equipe':
+                include("vues/v_equipe.php");
+                break;
             default :
                 echo('404 - not found');
                 break;

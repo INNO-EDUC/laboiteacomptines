@@ -102,12 +102,21 @@ li 					  { list-style: none;
                         width:            100%; }
 .wrapBig	 		  { width: 			  960px; }
 
-.bloc, .blocBig		  { width: 			  280px;
-						margin: 		  20px;
+.wrapBig h6           { padding-left:     20px; }
+
+.bloc, .blocBig		  { margin: 		  20px;
 						float: 			  left; }
 
-.bloc	 			  { height: 		  270px;
+.bloc33	 			  { width: 			  280px;
+                        height: 		  270px;
 						background-color: #F4E8D9; }
+
+.bloc25               { width: 200px;
+                        height: 260px; }
+
+.bloc25 .bottomBloc   { padding-top: 10px; }
+
+.bloc25 h3            { display: block; }
 
 .blocBig	 		  { height: 		  540px;
 						padding: 		  20px 0;
@@ -325,7 +334,7 @@ footer 				  { height: 		  auto;
 						padding: 		  15px 20px 20px 20px;
 						position: 		  relative; }
 
-.bloc h3		  	  { display: 		  inline;
+.bloc33 h3		  	  { display: 		  inline;
 						cursor: 		  pointer; }
 
 .bloc h3:hover 		 { color: #574F84; }
@@ -500,6 +509,33 @@ label#paroles         { vertical-align: top;
 
 
 
+/* ----------- EQUIPE ----------- */
+
+#team_cover 		  { width:			  100%;
+                        height:			  480px;
+                        position:		  relative;
+                        background: 	  url(img/illunoel.jpg) no-repeat center center;
+                        -webkit-background-size: cover;
+                        -moz-background-size: cover;
+                        -o-background-size: cover;
+                        background-size: cover; }
+
+
+.team_padding         { padding: 40px 0; }
+
+
+.wrap .team_list      { text-align: left;
+                        padding-left: 0;
+                        display: list-item;
+                        list-style-type: disc;
+                        list-style-position: inside;
+                        color: black; }
+
+
+
+
+
+
 /*** TYPO ***/
 
 
@@ -536,7 +572,9 @@ h6 	 			 	  { font-family: 	  'Cookie', cursive;
 
 p 	 			 	  { font-size: 		  16px;
 						line-height: 	  20px;
-						color:			  #333; }
+						color:			  #333;
+                        padding-top: 20px;
+                        text-align: justify; }
 
 
 
