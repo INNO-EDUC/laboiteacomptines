@@ -2,7 +2,21 @@
 
 <!-- COVER (image à changer) -->
 
-<div id="cover"></div>
+<div id="cover">
+    <div class='wrap'>
+
+        <div class='upload_text'>
+            <a href="index.php?action=concours">
+                <h6 style="font-size: 1.7em;">Participez au concours de noel</h6>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- Annonce du concours -->
+
 
 <!-- RECHERCHE -->
 

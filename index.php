@@ -63,6 +63,9 @@ switch($app)
             case 'equipe':
                 include("vues/v_equipe.php");
                 break;
+            case 'concours':
+                include("vues/v_concours.php");
+                break;
             default :
                 echo('404 - not found');
                 break;
