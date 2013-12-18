@@ -54,7 +54,7 @@
         <div class="c50">
 
             <div class="field">
-                <label id="paroles">Paroles : </label> <textarea class="input" rows="14" cols="40" name="paroles" style="height: 250px;"></textarea>
+                <label id="paroles">Paroles : </label> <textarea class="input" rows="14" cols="40" name="paroles" style="height: 250px; resize: none;"></textarea>
             </div>
 
         </div>
