@@ -58,7 +58,7 @@
 
     if (isset($added))
     {
-        if ($added===1)
+        if ($added)
         {
             echo '<script>alert("La video à bien été ajoutée")</script>';
         }

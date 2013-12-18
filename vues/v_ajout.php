@@ -6,7 +6,7 @@
 
     <div id="upload_cover"></div>
     <div class='upload_text'>
-        <h6 style="font-size: 1.7em;">Créer votre propre comptine et mettez la en ligne sur notre site !</h6>
+        <h6 style="font-size: 1.7em;">Créez votre propre comptine et mettez-la en ligne !</h6>
     </div>
 
 </div>
@@ -42,7 +42,7 @@
             <div class="field">
                 <label for='Video' id="vidéo">Ajouter une video :</label>
                 <div class="fileUpload button" style="float: right;">
-                    <span>Choisissez un fichier</span>
+                    <span>Choisir un fichier</span>
                     <input class="fichier upload" type="file" capture="camera" accept="video/*" name="video" id="fichier"/>
                 </div>
                 <input id="uploadFile" disabled="disabled">

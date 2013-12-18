@@ -1,4 +1,11 @@
 <?php
+require_once('lib/class.detect_device.php');
+$actual_device = new detect_device();
+$actual_device->mobileredirect = "http://m.laboiteacomptines.fr";
+$actual_device->desktopredirect = false;
+$actual_device->redirect();
+
+
 include('helpers.php');
 
 if(!isset($_REQUEST['app']))
