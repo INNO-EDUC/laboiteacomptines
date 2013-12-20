@@ -157,7 +157,8 @@ li					  {	text-align: 	  center; }
                         color: #ffffff;
                         width: 60%;
                         margin-left: auto;
-                        margin-right: auto; }
+                        margin-right: auto;
+                        -webkit-appearance: none; }
 .btn_type3:hover      { background-color: #CE006C; }
 
 
