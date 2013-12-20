@@ -240,7 +240,8 @@ input#keyword		  { width: 			  731px;
 input#submit		  { margin-left: 	  20px;
 						color: 			  #FFF;
 						background-color: #6F5F99;
-						cursor: 		  pointer; }
+						cursor: 		  pointer; 
+						-webkit-appearance: none; }
 
 input#submit:hover	  { background-color: #574F84; }
 
@@ -268,7 +269,7 @@ input#submit:hover	  { background-color: #574F84; }
 
 .catHeader p          { color: #6F5F99;
                         display: inline-block;
-                        width: 786px;
+                        width: 785px;
                         padding-left: 20px;
                         vertical-align: top;
                         text-align: justify; }
